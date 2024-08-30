@@ -34,3 +34,4 @@
 | 27 | Total Asset Installed Capacity                    | 15136 non-null    | float64 |
 | 28 | Available for Restore                            | 15136 non-null    | object  |
 | 29 | Restore Price                                    | 15136 non-null    | int64   |
+
