@@ -1,11 +1,11 @@
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 15136 entries, 0 to 15135
-Data columns (total 30 columns):
  #   Column                               Non-Null Count  Dtype  
 ---  ------                               --------------  -----  
  0   CMZ Code                             15136 non-null  object 
+ 
  1   Flexibility Product                  15136 non-null  object 
+ 
  2   Trade Opportunity Name               15136 non-null  object 
+ 
  3   Trade Window Name                    15136 non-null  object 
  4   Delivery Start Date                  15136 non-null  object 
  5   Delivery End Date                    15136 non-null  object 
