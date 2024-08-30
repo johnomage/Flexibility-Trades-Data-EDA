@@ -18,7 +18,6 @@ The analysis explores questions like:
 This repository contains Jupyter notebook with the full EDA process, from data loading to final visualizations and insights, and a Power BI file.
 
 
-
 <u>**Features Dictionary**</u>
 
 | Title                                     | Type    | Label | Description                                                               | Example                                 |
@@ -54,6 +53,10 @@ This repository contains Jupyter notebook with the full EDA process, from data l
 | Available for Restore                     | text    | nan   | Indication of whether the assets will be available for providing Restore services | Yes                                   |
 | Restore Price                             | numeric | £/MWh | Restore price per MWh (utilisation only)                                  | 1200                                    |
 
+
+Sample Visual
+
+![alt text](tradeOutcome.png)
 <br></br>
 
 **Additional Info**
