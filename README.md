@@ -1,4 +1,4 @@
-# Flexibility-Trades-Data-EDA
+# NGED Flexibility-Trades-Data-EDA
 Exploratory Data Analysis of flexibility trades in NationalGrid ED market.
 This project analyzes data on flexibility products, technology types, and trading patterns across different energy companies.
 **Key features**:
@@ -54,6 +54,14 @@ This repository contains Jupyter notebook with the full EDA process, from data l
 | Available for Restore                     | text    | nan   | Indication of whether the assets will be available for providing Restore services | Yes                                   |
 | Restore Price                             | numeric | £/MWh | Restore price per MWh (utilisation only)                                  | 1200                                    |
 
+<br></br>
 
-
-Data Source: [NGED Connected Data Portal](https://connecteddata.nationalgrid.co.uk/dataset/flexibility-trades-data-and-results/resource/0e0b3921-c4d0-494c-a5ca-f529ad328ee3)
+**Additional Info**
+ + Data Source: [NGED Connected Data Portal](https://connecteddata.nationalgrid.co.uk/dataset/flexibility-trades-data-and-results/resource/0e0b3921-c4d0-494c-a5ca-f529ad328ee3)
+ + Rights:	[NGED Open Data Licence](https://www.nationalgrid.co.uk/open-data-licence)
+ + Uploaded Date:	August 24, 2023, 2:26 PM (UTC+01:00)
+ + Creator:	National Grid Electricity Distribution
+ + Contributor:	Digitalisation & Data
+ + Language: EN
+ + Data Classification:	Open
+ + Update Frequency	Not Applicable
