@@ -14,9 +14,11 @@ The analysis explores questions like:
  - How do trade volumes vary across different dimensions?
  - Are there any notable trends or patterns in the flexibility market?
    
-**Tools used**: Python, Pandas, Matplotlib, Seaborn, Power BI
+**Tools used**: Python, Pandas, Matplotlib, Seaborn, Power BI, Streamlit
 
 This repository contains Jupyter notebook with the full EDA process, from data loading to final visualizations and insights, and a Power BI file.
+
+See live Charts here: https://flexibility-trade-eda.streamlit.app/
 
 
 <u>**Features Dictionary**</u>
