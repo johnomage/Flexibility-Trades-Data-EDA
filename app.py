@@ -94,7 +94,7 @@ def format_KW_MW(capacity: float, feature):
 # Function to format price in GBP with thousand separator
 def format_as_currency(price: float, feature: str):
     price_value = locale.currency(price, grouping=True)
-    st.markdown(f"<b>{feature}</b><h3>{price_value}</h3>", unsafe_allow_html=True)
+    st.markdown(f"<b>{feature}</b><h3>{str(price_value)}</h3>", unsafe_allow_html=True)
 
 
 st.markdown("<h5 style='text-align: center;'>💷Total Price Metrics💷</h5>", unsafe_allow_html=True)
