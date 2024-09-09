@@ -1,6 +1,6 @@
-python==3.12.6 # 64bit
+python # ==3.12.6 64bit
+streamlit==1.32.0
 plotly==5.22.0
 pandas==2.2.2
 numpy==1.26.4
-streamlit==1.32.0
 locale

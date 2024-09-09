@@ -118,7 +118,7 @@ with restore_price_col:
 with offered_price_col:
     format_as_currency(selected_data['Offered Availability Price'].sum(), 'Total Offered Availability')
 
-
+st.write('\n')
 
 # ###################################### Add metrics for capacity
 st.markdown("<h5 style='text-align: center;'>⚡Total Capacity Metrics⚡</h5>", unsafe_allow_html=True)
@@ -188,6 +188,7 @@ with tech_cap_barchart_col:
 # %% Create barchart for FSP Service Availability by Day of Week
 # barchart for FSP service availablity days
 # group by 'Company Name' and sum service counts for each day of the week
+"---"
 title_format = {"x": 0.5, "xanchor": "center", "yanchor": "top"}  # Center the title
 service_days_count = (
     selected_data.groupby("Company Name")[
@@ -199,20 +200,12 @@ service_days_count = (
 
 # Convert the dataframe to long format with pd.melt()
 service_days_long = pd.melt(
-    service_days_count,
-    id_vars=["Company Name"],
-    value_vars=[
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday",
-    ],
-    var_name="Day of Week",
-    value_name="Service Count",
-)
+                            service_days_count,
+                            id_vars=["Company Name"],
+                            value_vars=["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                            var_name="Day of Week",
+                            value_name="Service Count",
+                        )
 
 service_days_fig = px.bar(service_days_long,
                           x="Company Name",
