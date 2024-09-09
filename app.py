@@ -26,9 +26,6 @@ st.set_page_config(
 
 # set page title
 st.title(":bulb: Flexibility Trades Data Visualisation")
-# get local region currency symbol
-locale.setlocale(locale.LC_ALL, '')
-
 
 
 # ++++++++++++++++++++++++++++++++++++++++++ cache data for quick loading ++++++++++++++++++++++++++++++++++++++++
@@ -90,11 +87,15 @@ def format_KW_MW(capacity: float, feature):
         st.markdown(f"<b>{feature}</b><h3>{cap_value:.4f}MW</h3>", unsafe_allow_html=True)
 
 
-
+# get local region currency symbol
+locale.setlocale(locale.LC_ALL, '')
 # Function to format price in GBP with thousand separator
 def format_as_currency(price: float, feature: str):
-    price_value = locale.currency(price, grouping=True)
-    st.markdown(f"<b>{feature}</b><h3>{str(price_value)}</h3>", unsafe_allow_html=True)
+    try:
+        price_value = locale.currency(price, grouping=True)
+        st.markdown(f"<b>{feature}</b><h3>{price_value}</h3>", unsafe_allow_html=True)
+    except ValueError:
+        st.markdown(f"<b>{feature}</b><h3>'£{price:,.2f}'</h3>", unsafe_allow_html=True)
 
 
 st.markdown("<h5 style='text-align: center;'>💷Total Price Metrics💷</h5>", unsafe_allow_html=True)
