@@ -1,6 +1,7 @@
 # NGED Flexibility-Trades-Data-EDA
 Exploratory Data Analysis of flexibility trades in NationalGrid ED market.
 This project analyzes data on flexibility products, technology types, and trading patterns across different energy companies.
+
 **Key features**:
  - Data cleaning and preprocessing of flexibility trade records.
  - Analysis of trade volumes by company, technology type, and flexibility product.
