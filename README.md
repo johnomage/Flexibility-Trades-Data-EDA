@@ -56,7 +56,7 @@ This repository contains Jupyter notebook with the full EDA process, from data l
 
 Sample Visual
 
-![Trade Outcome](https://github.com/johnomage/Flexibility-Trades-Data-EDA/raw/main/files/tradeOutcome.png)
+![Trade Outcome](https://raw.githubusercontent.com/johnomage/Flexibility-Trades-Data-EDA/main/datastore/tradeOutcome.png)
 <br></br>
 
 **Additional Info**
