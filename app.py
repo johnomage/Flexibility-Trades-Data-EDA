@@ -25,7 +25,7 @@ st.set_page_config(
 
 
 # set page title
-st.title(":bulb: Flexibility Trades Data Visualisation")
+st.title(":bulb: UK Flexibility Trades Data Visualisation: 2024 - 2029")
 
 
 # ++++++++++++++++++++++++++++++++++++++++++ cache data for quick loading ++++++++++++++++++++++++++++++++++++++++
