@@ -100,6 +100,8 @@ def format_as_currency(price: float, feature: str):
 st.markdown("<h5 style='text-align: center;'>💷Total Price Metrics💷</h5>", unsafe_allow_html=True)
 # create metrics with columns and populate
 total_records_col, awarded_util_price_col, awarded_avail_col,  restore_price_col, offered_price_col = st.columns(5)
+
+# total records
 total_records = selected_data.shape[0]
 
 # ##################### add metrics to dashboard
@@ -142,9 +144,7 @@ with awarded_cap_col:
 
 st.write("---")
 
-
 # +++++++++++++++++++++++++++++++++++++++++++ Charts Container ++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 
 # barcharts on capacity
 def plug_in_barchart(feature, title, grouping="Company Name"):
@@ -186,17 +186,15 @@ with tech_cap_barchart_col:
     )
 
 
-# %% Create barchart for FSP Service Availability by Day of Week
+# Create barchart for FSP Service Availability by Day of Week
 # barchart for FSP service availablity days
 # group by 'Company Name' and sum service counts for each day of the week
 "---"
 title_format = {"x": 0.5, "xanchor": "center", "yanchor": "top"}  # Center the title
 service_days_count = (
-    selected_data.groupby("Company Name")[
-        ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-    ]
-    .sum()
-    .reset_index()
+    selected_data.groupby("Company Name")[["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]]
+                        .sum()
+                        .reset_index()
 )
 
 # Convert the dataframe to long format with pd.melt()
