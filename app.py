@@ -27,7 +27,8 @@ st.set_page_config(
 # set page title
 st.title(":bulb: Flexibility Trades Data Visualisation")
 # get local region currency symbol
-locale.setlocale(category=locale.LC_ALL, locale="English_United Kingdom.1252")
+locale.setlocale(category=locale.LC_ALL, locale="en-GB.UTF-8")
+
 
 
 # ++++++++++++++++++++++++++++++++++++++++++ cache data for quick loading ++++++++++++++++++++++++++++++++++++++++
