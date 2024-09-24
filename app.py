@@ -15,7 +15,7 @@ st.set_page_config(
     page_title="📊Flexibility Trades Dashboard",
     page_icon="",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
     menu_items={
         "Get Help": "mailto:john.e.omage@gmail.com",
         "Report a bug": "mailto:john.e.omage@gmail.com",
