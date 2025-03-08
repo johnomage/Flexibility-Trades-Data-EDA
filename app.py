@@ -95,7 +95,7 @@ def format_as_currency(price: float, feature: str):
         price_value = locale.currency(price, grouping=True)
         st.markdown(f"<b>{feature}</b><h3>{price_value}</h3>", unsafe_allow_html=True)
     except ValueError:
-        st.markdown(f"<b>{feature}</b><h3>£{price:,.2f}</h3>", unsafe_allow_html=True)
+        st.markdown(f"<b>{feature}</b><h3>£{price:,}</h3>", unsafe_allow_html=True)
 
 
 st.markdown("<h5 style='text-align: center;'>💷Total Price Metrics💷</h5>", unsafe_allow_html=True)
